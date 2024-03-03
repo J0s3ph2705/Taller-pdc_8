@@ -1,20 +1,31 @@
 # Taller-pdc_8
-##Equipo: Pantalla Azul
-##Logo:
 
-##Integrantes: 
--Joseph lievano (105238308)
--
--
-#Taller
-1. Realice el <a href="https://pythonspot.com/python-tests-quizes/">quiz</a> *Python Beginner Quiz* (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
-   <div align='center'>
-<figure> <img src="https://i.postimg.cc/KjrqrjZL/image.png" alt="" width="600" height="auto"/></br>
-<figcaption><b>Palabras reservadas de Python</b></figcaption></figure>
+### Equipo y Logo: Pantalla Azul
+
+<div align='center'>
+<figure> <img src="LOGO VA AQUÍ" alt="" width="600" height="auto"/></br>
+</figure>
 </div> 
+
+
+### Integrantes:
+
+1. Joseph Lievano (1052383083)
+2. 
+3. 
+
+# Taller
+
+1. Realice el <a href="https://pythonspot.com/python-tests-quizes/">quiz</a> *Python Beginner Quiz* (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
+<div align='center'>
+<figure> <img src="LOGO VA AQUÍ" alt="" width="600" height="auto"/></br>
+</figure>
+</div> 
+
 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
+
 ```python
-#El programa toma los números
+  #El programa toma los números
 
 n1=input("Número 1? ")
 n2=input("Número 2? ")
@@ -28,11 +39,11 @@ elif float(n2)>float(n1) and float(n2)>float(n3):
     print("El número "+str(n2)+" es el mayor")
 else:
     print("El número "+str(n3)+" es el mayor")
-´´´
+```
+3. Realice un programa que lea un número enteros y determine si es par o impar.
 
-3. Realice un programa que lea un número entero y determine si es par o impar.
-´´´python
-#Se toma el número
+```python
+  #Se toma el número
 
 n1=input("Número? ")
 
@@ -42,11 +53,15 @@ if int(n1)%2==0:
     print("El número "+str(n1)+" es par")
 else:
     print("El número "+str(n1)+" es impar")
-´´´
-
+```
+<div align='center'>
+<figure> <img src="LOGO VA AQUÍ" alt="" width="600" height="auto"/></br>
+</figure>
+</div> 
 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
-´´´python
-#Se toma los números
+
+```python
+  #Se toma los números
 
 n1=input("Número 1? ")
 n2=input("Número 2? ")
@@ -65,11 +80,11 @@ if d-e==0:
     print(str(n1)+" es múltiplo de "+str(n2))
 else:
     print(str(n1)+" no es múltiplo de "+str(n2))
-´´´
-
+```
 5. Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
-´´´python
-#se toman los números
+
+```python
+  #se toman los números
 
 n1=input("Número 1? ")
 n2=input("Número 2? ")
@@ -87,10 +102,12 @@ elif float(n3)==suma:
     print(str(n3)+" es igual que "+str(n2)+"+"+str(n1))
 else:
     print(str(n3)+" es menor que "+str(n2)+"+"+str(n1))
-´´´
 
+```
 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
-´´´python
+
+```python
+  
 #Se pide la letra
 
 letra=input("Letra? ")
@@ -105,19 +122,17 @@ if ord(letra)in minu:
     print(str(letra)+" es una vocal")
 else:
     print(str(letra)+" es una consonante")
-´´´
-
+```
 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
-´´´python
-+ El promedio
-+ La mediana
-+ El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
-+ Ordenar los números de forma ascendente
-+ Ordenar los números de forma descendente
-+ La potencia del mayor número elevado al menor número
-+ La raíz cúbica del menor número
-
-#Se pide los números
+  + El promedio
+  + La mediana 
+  + El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
+  + Ordenar los números de forma ascendente
+  + Ordenar los números de forma descendente
+  + La potencia del mayor número elevado al menor número
+  + La raíz cúbica del menor número
+```python
+  #Se pide los números
 
 n1=input("Número 1? ")
 n2=input("Número 2? ")
@@ -159,11 +174,11 @@ print("El orden ascendente es "+str(ascendente))
 print("El orden descendente es "+str(descendente))
 print("La potencia de el número mayor ("+str(mayor)+") a la de el número menor ("+str(menor)+") es "+str(potencia))
 print("La raíz cúbica del número menor ("+str(menor)+") es igual a "+str(raiz))
-´´´
+```
+8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
 
-8. Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
-´´´python
-#Se pide la frecuencia en Hz
+```python
+  #Se pide la frecuencia en Hz
 
 h=input("Onda en Hz? ")
 
@@ -183,11 +198,11 @@ elif float(h)<(30e18):
     print("La onda es una onda de rayos X")
 else :
     print("La onda es una onda de rayos gamma")
-´´´
+```
+9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
 
-9. Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
-´´´python
-#Se pide el país en minúsculas
+```python
+  #Se pide el país en minúsculas
 
 p=input("País? ")
 
@@ -204,16 +219,15 @@ if p in paises:
     print("la capital de "+p+" es "+capitales[numero])
 else:
     print("El pais no pertenece a América.")
-´´´
-
+```
 10. Escriba un programa que dada una distancia calcule:
-´´´python
 + El tiempo que le tomaría a la luz recorrer la distancia.
 + El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
 + El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
 + El tiempo que le tomaría a Bolt recorrer la distancia.
 
-#Se toma la distancia en metros
+```python
+  #Se toma la distancia en metros
 
 d=input("Distancia en metros? ")
 
@@ -230,4 +244,4 @@ print("La luz se tardaría "+str(luz)+(" segundos"))
 print("El sonido (en el aire a temperatura normal) se tardaría "+str(sonido)+(" segundos"))
 print("El Koeniggsegg Jesko Absolut a su velocidad máxima (531km/h) se tardaría "+str(auto)+(" segundos"))
 print("Usain Bolt a su velocidad máxima (44km/h)se tardaría "+str(bolt)+(" segundos"))
-´´´
+```
