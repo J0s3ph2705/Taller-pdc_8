@@ -1,0 +1,116 @@
+2. Realice un programa que lea tres números reales y determine cuál es el mayor.
+
+#El programa toma los números
+
+n1=input("Número 1? ")
+n2=input("Número 2? ")
+n3=input("Número 3? ")
+
+#El programa compara los números e imprime el mayor
+
+if float(n1)>float(n2) and float(n1)>float(n3):
+    print("El número "+str(n1)+" es el mayor")
+elif float(n2)>float(n1) and float(n2)>float(n3):
+    print("El número "+str(n2)+" es el mayor")
+else:
+    print("El número "+str(n3)+" es el mayor")
+
+
+
+
+4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
+
+#Se toma los números
+
+n1=input("Número 1? ")
+n2=input("Número 2? ")
+
+#Se dividen los números (para que de decimal)
+
+d=float(n1)/float(n2)
+
+#Se dividen los números exactamente (para qeue de un número entero)
+
+e=float(n1)//float(n2)
+
+#Si se restan los resultados y da 0, significa que los dos resultaods son el mismo número, el cual tiene que ser entero, si es entero significa que el primer número si es múltiplo del segundo número.
+
+if d-e==0:
+    print(str(n1)+" es múltiplo de "+str(n2))
+else:
+    print(str(n1)+" no es múltiplo de "+str(n2))
+
+
+
+
+6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
+
+#Se pide la letra
+
+letra=input("Letra? ")
+
+#Se hace un conjunto con los carácteres ASCII de las vocales
+
+minu=(65,69,73,79,85,97,101,105,111,117)
+
+#Si el ASCII de la letra está en el conjunto "minu", la letra es una vocal.
+
+if ord(letra)in minu:
+    print(str(letra)+" es una vocal")
+else:
+    print(str(letra)+" es una consonante")
+
+
+
+
+
+8. Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
+
+#Se pide la frecuencia en Hz
+
+h=input("Onda en Hz? ")
+
+#Se determina entre qué rango de frecuencia está, cada "elif" ´contiene´ un campo electromagnético, asi que cuando la frecuencia queda en un grupo, el programa imprime el programa al cual pertenece
+
+if float(h)<(300e6):
+    print("La onda es una onda de radio")
+elif float(h)<(300e9):
+    print("La onda es una onda de microondas")
+elif float(h)<(384e12):
+    print("La onda es una onda de infrarojo")
+elif float(h)<(789e12):
+    print("La onda es una onda visible")
+elif float(h)<(30e15):
+    print("La onda es una onda de ultravioleta")
+elif float(h)<(30e18):
+    print("La onda es una onda de rayos X")
+else :
+    print("La onda es una onda de rayos gamma")
+
+
+
+
+10. Escriba un programa que dada una distancia calcule:
+
+El tiempo que le tomaría a la luz recorrer la distancia.
+El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
+El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
+El tiempo que le tomaría a Bolt recorrer la distancia.
+
+#Se toma la distancia en metros
+
+d=input("Distancia en metros? ")
+
+#Se divide la distancia en la velocidad de cada elemento en metros/segundo
+
+luz=float(d)/300000
+sonido=float(d)/343
+auto=float(d)/147.523
+bolt=float(d)/12.3
+
+#Se imprime el resultado de cada elemento, en segundos.
+
+print("La luz se tardaría "+str(luz)+(" segundos"))      
+print("El sonido (en el aire a temperatura normal) se tardaría "+str(sonido)+(" segundos"))
+print("El Koeniggsegg Jesko Absolut a su velocidad máxima (531km/h) se tardaría "+str(auto)+(" segundos"))
+print("Usain Bolt a su velocidad máxima (44km/h)se tardaría "+str(bolt)+(" segundos"))
