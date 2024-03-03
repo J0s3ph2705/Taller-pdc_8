@@ -7,7 +7,6 @@
 </figure>
 </div> 
 
-
 ### Integrantes:
 
 1. Joseph Lievano (1052383083)
@@ -18,9 +17,10 @@
 
 1. Realice el <a href="https://pythonspot.com/python-tests-quizes/">quiz</a> *Python Beginner Quiz* (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 <div align='center'>
-<figure> <img src="LOGO VA AQUÍ" alt="" width="600" height="auto"/></br>
+<figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/c8bf119c-8f7a-4d09-8162-1a47252b6ca5" alt="" width="1000" height="auto"/></br>
 </figure>
 </div> 
+
 
 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
 
@@ -55,7 +55,7 @@ else:
     print("El número "+str(n1)+" es impar")
 ```
 <div align='center'>
-<figure> <img src="LOGO VA AQUÍ" alt="" width="600" height="auto"/></br>
+<figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/95495fc3-aa21-4a3f-b125-6fe539c7ab71" alt="" width="600" height="auto"/></br>
 </figure>
 </div> 
 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
