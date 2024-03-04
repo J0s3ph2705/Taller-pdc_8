@@ -24,7 +24,7 @@
 
 
 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
-
+  Se toma los números y se comparan entre sí para determinar el número mayor
 ```python
   #El programa toma los números
 
@@ -42,7 +42,7 @@ else:
     print("El número "+str(n3)+" es el mayor")
 ```
 3. Realice un programa que lea un número enteros y determine si es par o impar.
-
+  Se toma el número entero y se saca el módulo entre 2, si da 0 entonces el número es par
 ```python
   #Se toma el número
 
@@ -61,7 +61,7 @@ else:
 </div> 
 
 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
-
+  Se toman los dos números y se dividen con decima y para que de entero, así un número da cifras decimales (si las tiene) y el otro da un número exacto. Si los 2 números son iguales, entonces es múltiplo, ya que se divide en el otro número exactamente.
 ```python
   #Se toma los números
 
@@ -84,7 +84,7 @@ else:
     print(str(n1)+" no es múltiplo de "+str(n2))
 ```
 5. Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
-
+  Se toman los 3 números, se da un valor a una variable equivalente a la suma de los 2 primeros números. Luego se compara la variable con el tercer número.
 ```python
   #se toman los números
 
@@ -107,7 +107,7 @@ else:
 
 ```
 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
-
+  Se toma la letra y se traduce a ASCII, luego se revisa si el número está en la lista con los códigos ASCII de todas las vocales, si está, es una vocal, sino, una consonante.
 ```python
   
 #Se pide la letra
@@ -133,6 +133,9 @@ else:
   + Ordenar los números de forma descendente
   + La potencia del mayor número elevado al menor número
   + La raíz cúbica del menor número
+  Se toman los números y se hace cada operación, una por una, diferenciando con paréntesis las operaciones que se deben resolver primero.
+  Luego, se hace una lista muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy laraga comparando los valores de los 5 números y así poder determinar el orden ascendente y descendente.
+  Luego, se toman los primeros valores de cada lista para hacer las últimas 2 operaciones
 ```python
   #Se pide los números
 
@@ -178,7 +181,7 @@ print("La potencia de el número mayor ("+str(mayor)+") a la de el número menor
 print("La raíz cúbica del número menor ("+str(menor)+") es igual a "+str(raiz))
 ```
 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
-
+  Se toma la frecuencia y se compara con los valores iniciales de cada espectro electromagnético, en primero que sea mayor se determina el espectro electromagnético de la onda.
 ```python
   #Se pide la frecuencia en Hz
 
@@ -202,7 +205,7 @@ else :
     print("La onda es una onda de rayos gamma")
 ```
 9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
-
+Se toma el país y se compara con una estructura de "match-case", en el que coincida se devuelve el país y su capital, a menos que no coincida con ningún país, en ese caso se devolvera el texto "El país no está en América"
 ```python
   #Se pide el país en minúsculas
 
@@ -227,7 +230,7 @@ else:
 + El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
 + El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
 + El tiempo que le tomaría a Bolt recorrer la distancia.
-
+  Se toma la distancia en metros y se divide en la velocidad de cada objeto/persona (una por una) en metros/segundo, luego el resultado es el tiempo en segundos.
 ```python
   #Se toma la distancia en metros
 
