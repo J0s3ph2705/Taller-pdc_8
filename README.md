@@ -12,7 +12,7 @@
 
 1. Joseph Lievano (1052383083)
 2. Hernan Javier Casilimas Vega (1007366398)
-3. 
+3. Juan José	Tobar Álvarez (1112042373)
 
 # Taller
 
