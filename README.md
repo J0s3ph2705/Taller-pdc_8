@@ -3,8 +3,9 @@
 ### Equipo y Logo: Pantalla Azul
 
 <div align='center'>
-<figure> <img src="LOGO VA AQUÍ" alt="" width="600" height="auto"/></br>
+<figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/b0dd65be-48ba-400b-a302-63eb8381cf65" alt="" width="600" height="auto"/></br>
 </figure>
+
 </div> 
 
 ### Integrantes:
