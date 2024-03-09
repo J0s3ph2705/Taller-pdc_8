@@ -21,7 +21,12 @@
 <figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/9f46d8e8-9429-43af-a408-9d0ff13c586f" alt="" width="1000" height="auto"/></br>
 </figure>
 </div> 
+<div align='center'>
+<figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/be751ce7-b453-42b6-a572-34f28e07f62f" alt="" width="1000" height="auto"/></br>
+</figure>
 
+
+</div> 
 
 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
    
