@@ -149,50 +149,148 @@ else:
   + La raíz cúbica del menor número
     
   Se toman los números y se hace cada operación, una por una, diferenciando con paréntesis las operaciones que se deben resolver primero.
-  Luego, se hace una lista muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy laraga comparando los valores de los 5 números y así poder determinar el orden ascendente y descendente.
-  Luego, se toman los primeros valores de cada lista para hacer las últimas 2 operaciones
+  Luego, se hacen muuuuchas comparaciones entre los valores de los 5 números y así poder determinar el orden ascendente y descendente.
+  Luego, se toman el valor mayor y el menor para la potencia y la raíz.
 ```python
   #Se pide los números
 
-n1=input("Número 1? ")
-n2=input("Número 2? ")
-n3=input("Número 3? ")
-n4=input("Número 4? ")
-n5=input("Número 5? ")
+n1=float(input("Número 1? "))
+n2=float(input("Número 2? "))
+n3=float(input("Número 3? "))
+n4=float(input("Número 4? "))
+n5=float(input("Número 5? "))
 
-#Se calcula el promedio, la mediana, el promedio multiplicativo...
+#Se saca el promedio, la mediana y el primedio multiplicativo, uno por uno y se imprimen
 
 promedio=(float(n1)+float(n2)+float(n3)+float(n4)+float(n5))/5
-mediana=(float(n1)+float(n2)+float(n3)+float(n4)+float(n5))//5
-promedio_multiplicativo=(float(n1)*float(n2)*float(n3)*float(n4)*float(n5))**(1/5)
-
-#Se hace una lista con los números
-
-lista=n1,n2,n3,n4,n5
-
-#Se usa la función "sort" para oorganizarla ascendente y descendentemente, y se hacen 2 listas
-
-ascendente=sorted(lista)
-descendente=sorted(lista, reverse=True)
-
-#Se toman los primeros valores de cada lista (el número más pequeño y el más grande) y se les asigna variables 
-
-menor=float(ascendente[0])
-mayor=float(descendente[0])
-
-#Se realiza la potencia y la raíz que se pide
-
-potencia=mayor**menor
-raiz=menor**(1/3)
-
-#Se imprimen los resultados
-
 print("El promedio es igual a "+str(promedio))
+mediana=(float(n1)+float(n2)+float(n3)+float(n4)+float(n5))//5
 print("La mediana es igual a "+str(mediana))
+promedio_multiplicativo=(float(n1)*float(n2)*float(n3)*float(n4)*float(n5))**(1/5)
 print("El promedio multiplicativo es igual a "+str(promedio_multiplicativo))
-print("El orden ascendente es "+str(ascendente))
-print("El orden descendente es "+str(descendente))
+
+#Se comparan los 5 valores para organizarlos del mayor al menor y viceversa
+
+if n1 <= n2 and n1 <= n3 and n1 <= n4 and n1 <= n5:
+    menor = n1
+    if n2 <= n3 and n2 <= n4 and n2 <= n5:
+        medio1 = n2
+        if n3 <= n4 and n3 <= n5:
+            medio2 = n3
+            if n4 <= n5:
+                medio3 = n4
+                mayor = n5
+            else:
+                medio3 = n5
+                mayor = n4
+        elif n4 <= n3 and n4 <= n5:
+            medio2 = n4
+            if n3 <= n5:
+                medio3 = n3
+                mayor = n5
+            else:
+                medio3 = n5
+                mayor = n3
+        else:
+            medio2 = n5
+            if n3 <= n4:
+                medio3 = n3
+                mayor = n4
+            else:
+                medio3 = n4
+                mayor = n3
+    elif n3 <= n2 and n3 <= n4 and n3 <= n5:
+        medio1 = n3
+        if n2 <= n4 and n2 <= n5:
+            medio2 = n2
+            if n4 <= n5:
+                medio3 = n4
+                mayor = n5
+            else:
+                medio3 = n5
+                mayor = n4
+        elif n4 <= n2 and n4 <= n5:
+            medio2 = n4
+            if n2 <= n5:
+                medio3 = n2
+                mayor = n5
+            else:
+                medio3 = n5
+                mayor = n2
+        else:
+            medio2 = n5
+            if n2 <= n4:
+                medio3 = n2
+                mayor = n4
+            else:
+                medio3 = n4
+                mayor = n2
+    elif n4 <= n2 and n4 <= n3 and n4 <= n5:
+        medio1 = n4
+        if n2 <= n3 and n2 <= n5:
+            medio2 = n2
+            if n3 <= n5:
+                medio3 = n3
+                mayor = n5
+            else:
+                medio3 = n5
+                mayor = n3
+        elif n3 <= n2 and n3 <= n5:
+            medio2 = n3
+            if n2 <= n5:
+                medio3 = n2
+                mayor = n5
+            else:
+                medio3 = n5
+                mayor = n2
+        else:
+            medio2 = n5
+            if n2 <= n3:
+                medio3 = n2
+                mayor = n3
+            else:
+                medio3 = n3
+                mayor = n2
+    else:
+        medio1 = n5
+        if n2 <= n3 and n2 <= n4:
+            medio2 = n2
+            if n3 <= n4:
+                medio3 = n3
+                mayor = n4
+            else:
+                medio3 = n4
+                mayor = n3
+        elif n3 <= n2 and n3 <= n4:
+            medio2 = n3
+            if n2 <= n4:
+                medio3 = n2
+                mayor = n4
+            else:
+                medio3 = n4
+                mayor = n2
+        else:
+            medio2 = n4
+            if n2 <= n3:
+                medio3 = n2
+                mayor = n3
+            else:
+                medio3 = n3
+                mayor = n2
+elif n2 <= n1 and n2 <= n3 and n2 <= n4 and n2 <= n5:
+    menor = n2
+    if n1 <= n3 and n1 <= n4 and n1 <= n5:
+        medio1 = n1
+        if n3 <= n4 and n3 <= n5:
+            medio2 = n3
+print("Números ordenados ascendentemente " + str(menor) + " , " + str(medio1) + " , " + str(medio2) + " , " + str(medio3) + " , " + str(mayor) + " ")
+print(Números ordenados descendentemente " + str(mayor) + " , " + str(medio3) + " , " + str(medio2) + " , " + str(medio1) + " , " + str(menor) + " "
+
+# Luego con el valor del menor y el mayor se saca la potencia y la raíz, y se imprimen.
+
+potencia = mayor**menor
 print("La potencia de el número mayor ("+str(mayor)+") a la de el número menor ("+str(menor)+") es "+str(potencia))
+raiz=menor**(1/3)
 print("La raíz cúbica del número menor ("+str(menor)+") es igual a "+str(raiz))
 ```
 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
@@ -227,25 +325,58 @@ else :
 
 9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
     
-Se toma el país y se compara con una lista que tiene todos los paises de América, si no esta, el país no está en América, si está, se toma el index y se compara este index con el de la lista de capitales, en la cual el index de cada país coincide con el de la capital, luego ya solo es tomar el texto de cada index y formular la respuesta completa.
+Se toma el país y se compara con una "if" que tiene el nombre del pais ingresado, el cual devuelve como texto el país y su capital. Si no llega a coincidir en un "if", se da el texto "El país no es de América"
 ```python
   #Se pide el país en minúsculas
-
-p=input("País? ")
-
-#Se hace una lista con los países y una con las capitales, de manera que cada país tenga el mismo index de su capital
-
-paises=("canadá","estados unidos","méxico","belice","costa rica","el salvador","guatemala","honduras","nicaragua","panama","argentina","bolivia","brasil","chile","colombia","ecuador","paraguay","perú","surinam","trinidad y tobago","uruguay","venezuela","antigua y barbuda","bahamas","barbados","cuba","dominica" ,"granada","guyana","haití" ,"jamaica","república dominicana","san cristóbal y nieves","san vicente y las granadinas","santa Lucía")
-
-capitales=["Otawwa.","Washington DC.","México DF.","Belmopán.","San José.","San Salvador.","Ciudad de Guatemala.","Tegucigalpa.","Managua.","Panamá.","Buenos Aires.","Sucre.","Brasilia.","Santiago de Chile.","Bogotá.","Quito.","Asunción.","Lima.","Parabarimo.","Puerto España.","Montevideo.","Caracas.","Saint John.","Nasáu.","Bridgetown.","La Habana.","Roseau.","Saint George.","Georgetown.","Puerto Príncipe.","Kingston.","Santo Domingo.","Basseterre.","Kingstown.","Castries."]
-
-#Se verifica si el país está en la lista, si esta, se encuentra el index para poder hallar su capital y se imprime el país con su capital; si no, se imprime un texto que dice que el país no está en América.
-
-if p in paises:
-    numero=paises.index(p)
-    print("la capital de "+p+" es "+capitales[numero])
+p = input("Ingresar un país de América en letras minusculas y sin tilde: ")
+if p == "argentina":
+  print("La capital de Argentina es Buenos Aires")
+elif p == "bolivia":
+  print("La capital de Bolivia es Sucre")
+elif p == "brasil":
+  print("La capital de Brasil es Brasilia")
+elif p == "canada":
+  print("La capital de Canadá es Ottawa")
+elif p == "chile":
+  print("La capital de Chile es Santiago")
+elif p == "colombia":
+  print("La capital de Colombia es Bogotá")
+elif p == "costa rica":
+  print("La capital de Costa Rica es San José")
+elif p == "cuba":
+  print("La capital de Cuba es La Habana")
+elif p == "ecuador":
+  print("La capital de Ecuador es Quito")
+elif p == "el salvador":
+  print("La capital de El Salvador es San Salvador")
+elif p == "estados unidos":
+  print("La capital de Estados Unidos es Washington D.C.")
+elif p == "guatemala":
+  print("La capital de Guatemala es Ciudad de Guatemala")
+elif p == "haiti":
+  print("La capital de Haití es Puerto Príncipe")
+elif p == "honduras":
+  print("La capital de Honduras es Tegucigalpa")
+elif p == "jamaica":
+  print("La capital de Jamaica es Kingston")
+elif p == "mexico":
+  print("La capital de México es Ciudad de México")
+elif p == "nicaragua":
+  print("La capital de Nicaragua es Managua")
+elif p == "panama":
+  print("La capital de Panamá es Ciudad de Panamá")
+elif p == "paraguay":
+  print("La capital de Paraguay es Asunción")
+elif p == "peru":
+  print("La capital de Perú es Lima")
+elif p == "republica dominicana":
+  print("La capital de República Dominicana es Santo Domingo")
+elif p == "uruguay":
+  print("La capital de Uruguay es Montevideo")
+elif p == "venezuela":
+  print("La capital de Venezuela es Caracas")
 else:
-    print("El pais no pertenece a América.")
+  print("País no es de América")
 ```
 10. Escriba un programa que dada una distancia calcule:
 + El tiempo que le tomaría a la luz recorrer la distancia.
