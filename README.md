@@ -24,6 +24,10 @@
 <div align='center'>
 <figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/be751ce7-b453-42b6-a572-34f28e07f62f" alt="" width="1000" height="auto"/></br>
 </figure>
+</div> 
+<div align='center'>
+<figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/fd104740-8fa8-42d9-949f-1956f0582e2f" alt="" width="1000" height="auto"/></br>
+</figure>
 
 
 </div> 
