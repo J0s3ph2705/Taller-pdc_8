@@ -288,7 +288,7 @@ elif n2 <= n1 and n2 <= n3 and n2 <= n4 and n2 <= n5:
         if n3 <= n4 and n3 <= n5:
             medio2 = n3
 print("Números ordenados ascendentemente " + str(menor) + " , " + str(medio1) + " , " + str(medio2) + " , " + str(medio3) + " , " + str(mayor) + " ")
-print(Números ordenados descendentemente " + str(mayor) + " , " + str(medio3) + " , " + str(medio2) + " , " + str(medio1) + " , " + str(menor) + " "
+print("Números ordenados descendentemente " + str(mayor) + " , " + str(medio3) + " , " + str(medio2) + " , " + str(medio1) + " , " + str(menor) + " ")
 
 # Luego con el valor del menor y el mayor se saca la potencia y la raíz, y se imprimen.
 
