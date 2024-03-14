@@ -322,7 +322,7 @@ elif float(h)<(30e18):
 else :
     print("La onda es una onda de rayos gamma")
 ```
-<figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/e95dfafd-43b2-46d9-a895-1fdea61b4cc6" alt="" width="600" height="auto"/></br>
+<figure> <img src="https://github.com/J0s3ph2705/Taller-pdc_8/assets/159032718/e95dfafd-43b2-46d9-a895-1fdea61b4cc6" alt="1200" width="1200" height="auto"/></br>
 </figure>
 </div> 
 
